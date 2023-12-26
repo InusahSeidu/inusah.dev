@@ -1,0 +1,92 @@
+/* Reset default browser styles */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Set a dark background and white text */
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #0d0d0d;
+    width: 200px; /* Adjust the width as needed */
+    position: fixed;
+    height: 100%; /* Make the navigation bar full height */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Enable scrolling for long menus */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow on the left side */
+}
+
+.logo h1{
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 20px; /* Adjust the spacing as needed */
+    font-size: large;
+}
+
+.nav-links li {
+    margin-bottom: 10px; /* Adjust the spacing between menu items */
+}
+
+.nav-links a {
+    color: #ffffff;
+    font-weight: 600;
+    display: block; /* Display each link as a block element */
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* Content Area Styles */
+.content {
+    margin-left: 200px; /* Match the width of the navigation bar */
+    padding: 20px; /* Add space to the content area */
+}
+
+/* Additional CSS styles for the rest of your page */
+
+
+/* Section Styles */
+.section {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Add your custom styles for project cards and other elements as needed */
+
+/* Example project card style */
+.project-card {
+    background-color: #333;
+    border: 1px solid #444;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
