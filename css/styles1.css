@@ -1,28 +1,31 @@
 /* Reset default browser styles */
 body, h1, h2, p, ul, li, a {
+    color: #ffffff;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: Arial, sans-serif;
 }
 
-/* Set a dark background and white text */
-body {
-    background-color: #1e1e1e;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
+
+header, body{
+    width: auto;
 }
 
 /* Navigation Bar Styles */
 nav {
-    background-color: #0d0d0d;
-    width: 200px; /* Adjust the width as needed */
+    width: 100%; /* Adjust the width as needed */
     position: fixed;
     height: 100%; /* Make the navigation bar full height */
     top: 0;
     left: 0;
     overflow-y: auto; /* Enable scrolling for long menus */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow on the left side */
+    border-bottom: darkgray solid;
+}
+
+.navbar-brand{
+    color: #ffffff;
 }
 
 .logo h1{
@@ -40,7 +43,6 @@ nav {
 }
 
 .nav-links a {
-    color: #ffffff;
     font-weight: 600;
     display: block; /* Display each link as a block element */
     transition: color 0.3s;
@@ -50,24 +52,48 @@ nav {
     color: #3498db;
 }
 
-/* Content Area Styles */
-.content {
-    margin-left: 200px; /* Match the width of the navigation bar */
-    padding: 20px; /* Add space to the content area */
-}
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
 
-/* Additional CSS styles for the rest of your page */
-
-
-/* Section Styles */
-.section {
-    padding: 50px 0;
-}
-
-.container {
-    max-width: 1200px;
+.main-content {
     margin: 0 auto;
-    padding: 0 20px;
+    height: 95vh;
+}
+
+.card-container{
+    margin: 0 auto;
+    top: 20%;
+    height: 300px;
+    position: relative;
+}
+
+.card{
+    margin: 0 auto;
+    height: 200px;
+    width: 900px;
+}
+
+.back-card{
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.front-card{
+    background-color: black;
+    border: white solid;
+    transform: translate(-2%, 90%);
+    z-index: 2;
+}
+
+.card-content{
+    margin: 0 auto;
+    color: white;
+    position: relative;
+    top: 20%;
+    font-size: 90px;
 }
 
 h2 {
